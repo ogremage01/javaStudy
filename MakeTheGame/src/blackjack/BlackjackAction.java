@@ -20,6 +20,7 @@ public class BlackjackAction {
 		System.out.println("그 외 스플릿 같은 룰도 있는데 그것도 구현하고 싶습니다.");
 		System.out.println("베팅도 구현 못했네요.");
 		System.out.println("A가 21을 넘기면 11에서 1이 되는 것도 구현하고 싶습니다.");
+		System.out.println("안된게 뭐이리 많아");
 		System.out.println("카드를 개봉합니다.");
 //		딜러가 카드 케이스 개봉
 		cc.init();
@@ -41,6 +42,7 @@ public class BlackjackAction {
 			
 			System.out.println("블랙잭. 딜러의 승리입니다.");
 			System.out.println(dealer.dealerCardList.get(0).getCard() + dealer.dealerCardList.get(1).getCard());
+			return;
 		}
 		
 		System.out.println("딜러의 카드는 뒷면 한장과 " + dealer.dealerCardList.get(1).getCard());
