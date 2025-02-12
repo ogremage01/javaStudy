@@ -32,6 +32,7 @@ public class Table {
 		}
 		bj.result();
 			}
+		System.out.println("소지금" + bj.player.playerMoney);
 		System.out.println("게임을 계속하시겠습니까? y/n");
 		input = sc.next();
 		if(input.toLowerCase().equals("n")) {

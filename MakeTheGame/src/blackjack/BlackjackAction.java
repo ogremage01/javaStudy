@@ -96,7 +96,7 @@ public class BlackjackAction {
 				System.out.println("플레이어의 점수는" + player.playerPoint);
 			}sc.nextLine();
 		}
-		System.out.println("플레이어 패배. 점수는" + player.playerPoint);
+		System.out.println("플레이어 버스트. 점수는" + player.playerPoint);
 		gameOver = true;
 		return;
 
