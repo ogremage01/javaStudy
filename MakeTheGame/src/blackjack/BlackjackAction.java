@@ -1,7 +1,6 @@
 package blackjack;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class BlackjackAction {
@@ -27,7 +26,7 @@ public class BlackjackAction {
 		System.out.println("블랙잭을 시작합니다.");
 		System.out.println("실력때문에 최대 4인이 플레이하는 게임을 1인 게임으로 만들 수 밖에 없어 슬픕니다.");
 		System.out.println("실제 카지노에서는 카드를 여러벌 쓰는 것도 구현하고 싶습니다.");
-		System.out.println("그 외 스플릿 같은 룰도 있는데 그것도 구현하고 싶습니다.");
+		System.out.println("그 외 스플릿 같은 룰도 있는데 그것도 구현하고 싶습니다. 아마 싹 새로만들어야겠지만요.");
 		System.out.println("---------------------------------------------");
 		System.out.println("카드를 개봉합니다.");
 //		딜러가 카드 케이스 개봉
