@@ -45,7 +45,7 @@ public class BlackjackAction {
 
 	public void DealerFirstOpen() {
 		System.out.println("딜러가 첫 카드를 드로우합니다.");
-		Draw(dealer);
+		dealerFirstDraw();
 		System.out.println("딜러가 두 번째 카드를 드로우합니다.");
 		Draw(dealer);
 		if (dealer.point == 21) {
@@ -167,13 +167,17 @@ public class BlackjackAction {
 		cc.getCardList().remove(0);
 		pointCheck(human);
 
-		if (human instanceof Dealer && human.CardList.size() == 1) {
-			return;
-		}
-
 		System.out.println(human.CardList.get(0).getCard());
 	}
 
+	public void dealerFirstDraw() {
+		dealer.CardList.add(0, cc.getCardList().get(0));
+		cc.getCardList().remove(0);
+		pointCheck(dealer);
+
+	}
+	
+	
 	public void pointInit() {
 
 		pointMap.put("A", 11);
